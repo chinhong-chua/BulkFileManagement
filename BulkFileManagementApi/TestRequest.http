@@ -1,0 +1,45 @@
+POST http://localhost:5139/filemanipulation 
+Content-Type: application/json
+
+{
+    "FolderPath": "C:\\TestFolder",
+     "Files": ["abc.pdf"],
+    "IncludeSubfolders": false,
+    "Manipulations": ["AddPrefix:TEST_", "ToUpper", "ChangeExtension:.pdf"]
+}
+
+###
+
+POST http://localhost:5139/filemanipulation 
+Content-Type: application/json
+
+{
+    "FolderPath": "C:\\TestFolder",
+     "Files": [],
+    "IncludeSubfolders": false,
+    "Manipulations": ["RemoveMatchingBegin:TEST1"]
+}
+
+###
+
+POST http://localhost:5139/filemanipulation 
+Content-Type: application/json
+
+{
+    "FolderPath": "C:\\TestFolder",
+     "Files": [],
+    "IncludeSubfolders": false,
+    "Manipulations": ["ReplaceText:TEST2:TEST1"]
+}
+
+###
+
+POST http://localhost:5139/filemanipulation 
+Content-Type: application/json
+
+{
+    "FolderPath": "C:\\TestFolder",
+     "Files": ["TEST123.txt"],
+    "IncludeSubfolders": false,
+    "Manipulations": ["ReplaceText:TEST1:TEST2"]
+}

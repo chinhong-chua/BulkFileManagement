@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KDkTTJwMOk+R2STDLqBOCoAZH5Re9GBVCDx7zlmEaG8=",
+  "Source": "BulkFileManagementApi",
+  "BasePath": "_content/BulkFileManagementApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
